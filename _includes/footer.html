@@ -1,5 +1,30 @@
 <footer class="site-footer">
   <div class="wrapper">
-    <p>&copy; {{ 'now' | date: "%Y" }} {{site.title}}</p>
+    <div class="footer">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{site.title}}</p>
+      <a id="lumos" onclick="lumos()">🌝</a>
+    </div>
   </div>
+
+  <script>
+    function lumos() {
+      document.body.parentElement.classList.toggle("dark")
+      if (document.body.parentElement.classList.contains("dark")) {
+        localStorage.setItem("dark", true)
+        document.getElementById('lumos').innerHTML = "🌝"
+      } else {
+        localStorage.removeItem("dark")
+        document.getElementById('lumos').innerHTML = "🌚"
+      }
+    }
+
+    window.addEventListener("DOMContentLoaded", function (event) {
+      if (localStorage.getItem("dark")) {
+        document.body.parentElement.classList.add("dark")
+        document.getElementById('lumos').innerHTML = "🌝"
+      } else {
+        document.getElementById('lumos').innerHTML = "🌚"
+      }
+    })
+  </script>
 </footer>

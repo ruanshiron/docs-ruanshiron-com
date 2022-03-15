@@ -1,6 +1,8 @@
 ---
 ---
 
-@import
-  "solarized",
-  "initialize";
+.dark {
+  @import "solarized-dark", "initialize";
+}
+
+@import "solarized", "initialize";
