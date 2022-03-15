@@ -1,0 +1,39 @@
+.site-header {
+  margin-bottom: 2rem;
+}
+
+.site-title {
+  @include relative-font-size(4);
+  font-weight: bold;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+
+  @include media-query($on-palm) {
+    padding-right: 45px;
+  }
+
+  &,
+  &:visited {
+    color: $site-title-color;
+  }
+}
+
+.site-footer {
+  padding: $spacing-unit 0;
+  @include relative-font-size(1.125);
+}
+
+.post-item {
+  border: solid 1px $border-color-01;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: transform .2s;
+
+  h3 {
+    margin: 0;
+  }
+
+  &:hover, &:focus {
+    box-shadow: 0 .5rem 1rem rgba($border-color-01, .15);
+  }
+}
