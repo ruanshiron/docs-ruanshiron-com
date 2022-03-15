@@ -3,22 +3,15 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 media_folder: 'assets/uploads/'
-collections: # A list of collections the CMS should be able to edit
-  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Post" # Used in the UI, ie.: "New Post"
+collections:
+  - name: "post" # Used in routes, e.g., /admin/collections/blog
+    label: "Post" # Used in the UI
     folder: "_posts" # The path to the folder where the documents are stored
-    sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields: # The fields each document in this collection have
-      - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string", required: true}
       - {label: "Categories", name: "categories", widget: "string", required: true}
-        required: false            
-      - label: "Date"
-        name: "date"
-        widget: "date"
-        default: ""
-        format: "YYYY-MM-DD hh:mm:ss"
-        required: true
       - {label: "Body", name: "body", widget: "markdown", required: true}
  
