@@ -3,7 +3,6 @@ description: >- # this means to ignore newlines
   Hello world, this is my blog.
 markdown: kramdown
 url: ""
-baseurl: "/docs-ruanshiron-com"
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
