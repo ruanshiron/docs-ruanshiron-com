@@ -13,13 +13,6 @@ collections: # A list of collections the CMS should be able to edit
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string", tagname: "h1", required: true}
       - {label: "Categories", name: "categories", widget: "string", required: true}
-      - label: "Featured Image"
-        name: "image"
-        widget: "image"
-        default: "jedi.png"
-        media_library:
-          config:
-            multiple: true
         required: false            
       - label: "Date"
         name: "date"
