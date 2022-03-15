@@ -24,16 +24,25 @@
 }
 
 .post-item {
-  border: solid 1px $border-color-01;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  transition: transform .2s;
 
   h3 {
     margin: 0;
   }
+}
 
-  &:hover, &:focus {
-    box-shadow: 0 .5rem 1rem rgba($border-color-01, .15);
+// Categories
+.archive-group {
+  margin-bottom: 2rem;
+}
+
+.category-head {
+  font-weight: bold;
+
+  &::before {
+    content: '#';
   }
+}
+
+.category-head {
+  margin-bottom: 0.25rem;
 }
