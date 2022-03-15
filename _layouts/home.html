@@ -30,10 +30,10 @@ layout: default
             {{ post.title | escape }}
           </a>
         </h3>
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <span class="post-meta">{{ post.date }}</span>
         <div class="post-categories">
           {% for c in post.categories %}
-          <a href="#!" class="post-category">{{c}}</a>
+          <a href="/categories#{{ c }}" class="post-category">{{c}}</a>
           {% endfor %}
         </div>
         {%- if site.show_excerpts -%}

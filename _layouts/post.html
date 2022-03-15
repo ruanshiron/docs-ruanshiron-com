@@ -9,13 +9,13 @@ layout: default
     <p class="post-meta">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {{ page.date | date: date_format }}
+        {{ page.date }}
       </time>
       {%- if page.modified_date -%}
         ~ 
         {%- assign mdate = page.modified_date | date_to_xmlschema -%}
         <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
-          {{ mdate | date: date_format }}
+          {{ mdate }}
         </time>
       {%- endif -%}
       {%- if page.author -%}
@@ -28,7 +28,7 @@ layout: default
     </p>
     <div class="post-categories">
       {% for c in page.categories %}
-      <a href="#!" class="post-category">{{c}}</a>
+      <a href="/categories#{{ c }}" class="post-category">{{c}}</a>
       {% endfor %}
     </div>
   </header>
