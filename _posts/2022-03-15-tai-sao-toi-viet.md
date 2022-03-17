@@ -3,7 +3,7 @@ layout: post
 title: Tại sao tôi viết?
 date: 2022-03-15
 categories: 
-- test
+- blog
 ---
 
 ![Dummy Image](https://picsum.photos/800/300)
