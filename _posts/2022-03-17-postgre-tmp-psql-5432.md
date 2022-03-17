@@ -8,7 +8,7 @@ categories:
 - postgresql
 ---
 
-Việc đầu tiên nên làm là kiểm tra log chứ không phải search goole!
+Việc đầu tiên nên làm là kiểm tra log chứ không phải search google!
 
 ```
 $ tail -f /usr/local/var/log/postgres.log  
