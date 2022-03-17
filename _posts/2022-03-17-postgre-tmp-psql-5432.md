@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"? 
-date: 2022-03-15
+date: 2022-03-17
 categories: 
 - code
 - error
