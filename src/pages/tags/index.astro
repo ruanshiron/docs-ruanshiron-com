@@ -15,7 +15,7 @@ let tags = getUniqueTags(posts);
 
 <Layout title={`Tags | ${SITE.title}`}>
   <Header activeNav="tags" />
-  <Main pageTitle="Tags" pageDesc="All the tags used in posts.">
+  <Main pageTitle="Tags" pageDesc="Tất cả thẻ được sử dụng.">
     <ul>
       {tags.map(tag => <Tag name={tag} size="lg" />)}
     </ul>
