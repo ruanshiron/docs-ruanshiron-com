@@ -28,13 +28,13 @@ export const SOCIALS: SocialObjects = [
   },
   {
     name: "Facebook",
-    href: "https://github.com/ruanshiron",
+    href: "https://facebook.com/ruanshiron",
     linkTitle: `${SITE.title} on Facebook`,
     active: true,
   },
   {
     name: "Instagram",
-    href: "https://instagram.com/runashiron",
+    href: "https://instagram.com/ruanshiron",
     linkTitle: `${SITE.title} on Instagram`,
     active: true,
   },
