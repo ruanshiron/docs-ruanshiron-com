@@ -5,7 +5,7 @@ export const SITE: Site = {
   author: "Sat Naing",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
   title: "ruanshiron",
-  ogImage: "astropaper-og.jpg",
+  ogImage: "ruanshiron-ai.jpg",
   lightAndDarkMode: true,
   postPerPage: 12,
 };
