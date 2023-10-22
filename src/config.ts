@@ -4,7 +4,7 @@ export const SITE: Site = {
   website: "https://docs.ruanshiron.com",
   author: "Sat Naing",
   desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
-  title: "Ruanshiron",
+  title: "ruanshiron",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 12,
